@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>11</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>ファイル</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>表示</string>
+    </property>
+    <addaction name="actionImageFit"/>
+    <addaction name="actionImageFitKeep"/>
+    <addaction name="actionScale_2"/>
+    <addaction name="actionScale_3"/>
+    <addaction name="actionScale_1_2"/>
+    <addaction name="actionScale_1_3"/>
+    <addaction name="actionScale_1_4"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>開く</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>終了</string>
+   </property>
+   <property name="iconText">
+    <string>終了</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionImageFit">
+   <property name="text">
+    <string>イメージのフィット(縦横比を維持しない)</string>
+   </property>
+  </action>
+  <action name="actionScale_1">
+   <property name="text">
+    <string>スケール1倍</string>
+   </property>
+  </action>
+  <action name="actionScale_2">
+   <property name="text">
+    <string>スケール2倍</string>
+   </property>
+  </action>
+  <action name="actionScale_3">
+   <property name="text">
+    <string>スケール3倍</string>
+   </property>
+  </action>
+  <action name="actionScale_1_2">
+   <property name="text">
+    <string>スケール1/2倍</string>
+   </property>
+  </action>
+  <action name="actionScale_1_3">
+   <property name="text">
+    <string>スケール1/3倍</string>
+   </property>
+  </action>
+  <action name="actionScale_1_4">
+   <property name="text">
+    <string>スケール1/4倍</string>
+   </property>
+  </action>
+  <action name="actionImageFitKeep">
+   <property name="text">
+    <string>イメージのフィット(縦横比を維持)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
